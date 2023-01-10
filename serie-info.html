@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="crowbarcode">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="movies, series, watch movies online, movies online free, watch series online free, movies in 1080p, 720p, 1080p, crowbarcode, movies in high definition, movies in 720p, movies in hd, action, comedy, adventure, science fiction, shows tv show, survival shows, drama, free movies and series, free online movies and series, watch movies and series for free">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/icons/crowbarcode-icons.css">
+    <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owl-carousel/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/rangeslider/rangeslider.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-responsive.css">
+    <title>StarDust - The 100</title>
+</head>
+<body>
+  
+    <div id="loading-page" class="loading-page d-flex flex-column">
+
+      <div class="logo"><a href="index.html"><img src="assets/img/logos/logo-icon-column-white.svg" alt="crowbarcode logo"></a></div>      
+
+      <div class="spinner-border mt-4" role="status"></div> 
+    
+    </div>
+
+    <div class="play play-in-page d-none">
+
+      <div class="movie-options row">
+
+        <div class="col-md">
+
+          <span class="h5">Free Guy</span>
+
+        </div>
+        
+        <div class="col-md d-flex ms-auto justify-content-end">
+
+          <nav class="navbar navbar-expand-lg movie-options-navbar">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><button class="ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Add to your list" aria-label="Add to your list"><i class="cci-add-01"></i></button></li>
+                  <li class="nav-item"><button class="ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Hide this movie" aria-label="Hide this movie"><i class="cci-block-04"></i></button></li>
+                  <li class="nav-item"><button class="ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Download this movie" aria-label="Download this movie"><i class="cci-download-09"></i></button></li>
+                  <li class="nav-item dropdown">
+                    <button class="ms-1 dropdown-toggle" id="navbarDropdownSubtitles" data-bs-toggle="dropdown" aria-expanded="false" aria-label="On/Off Subtitles"><i class="cci-message-02"></i></button>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownSubtitles">
+                      <li><a class="dropdown-item d-flex align-items-center" href="#">Off <i class="cci-check-01 ms-3"></i></a></li>
+                      <li><a class="dropdown-item d-flex align-items-center" href="#">English - US</a></li>
+                      <li><a class="dropdown-item d-flex align-items-center" href="#">Portuguese - BR</a></li>
+                      <li><a class="dropdown-item d-flex align-items-center" href="#">Spanish - SP</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="ms-1 dropdown-toggle" id="navbarDropdownLanguage" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language"><i class="cci-globe-02"></i></button>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownLanguage">
+                      <li><a class="dropdown-item d-flex align-items-center" href="#">English - US <i class="cci-check-01 ms-3"></i></a></li>
+                      <li><a class="dropdown-item d-flex align-items-center" href="#">Portuguese - BR</a></li>
+                      <li><a class="dropdown-item d-flex align-items-center" href="#">Spanish - SP</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <button class="ms-1 dropdown-toggle" id="navbarDropdownOptions" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Media Settings"><i class="cci-cog-02"></i></button>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownOptions">
+                      <li><a class="dropdown-item d-flex align-items-center" href="#">4K <i class="cci-check-01 ms-3"></i></a></li>
+                      <li><a class="dropdown-item" href="#">1080P</a></li>
+                      <li><a class="dropdown-item" href="#">720p</a></li>
+                      <li><a class="dropdown-item" href="#">420p</a></li>
+                      <li><a class="dropdown-item" href="#">320p</a></li>
+                    </ul>
+                  </li>
+                  <li data-mediaevent="close"><button class="ms-1" id="close-media" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Close Media" aria-label="Close Media"><i class="cci-uncheck-01"></i></button></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        </div>
+
+      </div>
+
+      <div class="video content-vid">
+
+        <video src="assets/vid/the-100.mp4"></video>
+
+        <button id="video-play-button" class="video-play-button"><i class="cci-play-fill-01"></i></button>
+
+      </div>
+
+      <div class="bar">
+
+        <input id="media-bar" type="range" min="0" max="100" value="0" data-rangeslider>
+
+      </div>
+
+      <div class="controls row">
+
+        <div class="col-md d-flex align-items-center justify-content-start">
+
+          <button id="media-play" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Media Play" aria-label="Media Play"><i class="cci-play-fill-01"></i></button>
+
+          <div class="ms-3"><span id="time" class="me-1">00:00:00</span> / <span id="total-time" class="ms-1">30:00</span></div>
+
+        </div>
+
+        <div class="col-md ms-auto d-flex justify-content-end">
+
+          <button id="volume" class="me-1" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="mute" aria-label="mute"><i class="cci-volume-03"></i></button>
+          <button id="media-increase" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Increase Cloth" aria-label="Increase Cloth"><i class="cci-maximize-screen-01"></i></button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <header>
+
+      <div class="container">
+
+          <div class="row w-100">
+
+              <button data-eventmenumobile="one" aria-label="Open menu mobile" class="me-auto col-md-9 d-flex align-items-center justify-content-start p-0 m-0"><i class="cci-menu-09"></i></button>
+
+              <div data-menumobile="one" class="col-md-9 d-flex align-items-center p-0 m-0">
+
+                  <div class="d-flex align-items-center">
+
+                    <div class="logo"><a href="index.html"><img src="assets/img/logos/logo-icon-column-white.svg" alt="crowbarcode logo"></a></div>
+
+                    <button data-eventmenumobile="one" aria-label="Close menu mobile" class="ms-auto"><i class="cci-close-menu-02"></i></button>
+
+                  </div>
+
+                  <nav class="navbar navbar-expand-lg navbar-light p-0">
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="navbar-nav">
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="movies.html">Movies</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="series.html">Series</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="stardust.html">Stardust Original</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="kids.html">Kids</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="genres.html">Movies Genres</a>
+                            </li>
+                          </ul>
+                        </div>
+                  </nav>
+
+              </div>
+
+              <div class="col-md d-flex align-items-center justify-content-end width-max">
+
+                  <div class="profile">
+
+                    <div class="content-img"><img src="assets/img/user/user-01.svg" alt="Profile Photo"></div>
+
+                    <div class="dropdown">
+                      <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Gordon</a>
+                    
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="my-account.html">My Account</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#changeProfile">Change Profile</a></li>
+                        <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                        <li><a class="dropdown-item" href="payments.html">Payments</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Log Out</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+
+      <div class="modal fade change-profile" id="changeProfile" aria-hidden="true" aria-labelledby="changeProfileLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="changeProfileLabel">Change Profile</h5>
+              <button type="button" class="btn hover-green p-0 m-0" data-bs-dismiss="modal" aria-label="Close"><i class="cci-uncheck-01"></i></button>
+            </div>
+            <div class="modal-body">
+
+              <div class="row profiles">
+
+                <div class="col-md">
+
+                  <div class="content-img"><img src="assets/img/user/user-01.svg" alt="Profile"></div>
+
+                  <span>Gordon Freeman</span>
+
+                </div>
+
+                <div class="col-md">
+
+                  <div class="content-img"><img src="assets/img/user/user-03.svg" alt="Profile"></div>
+
+                  <span>Morgan Yu</span>
+
+                </div>
+
+                <div class="col-md">
+
+                  <div class="content-img"><img src="assets/img/user/user-07.svg" alt="Profile"></div>
+
+                  <span>Kids</span>
+
+                </div>
+
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-success" data-bs-target="#changeProfile2" data-bs-toggle="modal">Create new profile</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade change-profile" id="changeProfile2" aria-hidden="true" aria-labelledby="changeProfile2Label" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="changeProfile2Label">Create a new profile</h5>
+              <button type="button" class="btn p-0 m-0 hover-green" data-bs-dismiss="modal" aria-label="Close"><i class="cci-uncheck-01"></i></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Profile Name:</label>
+                  <input type="text" class="form-control" id="recipient-name" placeholder="Profile Name">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Kids</label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-success" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Create Profile</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <main class="movie-preview">
+
+      <section>
+
+        <div class="container movie-info-header">
+
+          <div class="movie-options">
+
+            <h1 class="h2 mt-5">The 100</h1>
+
+            <div class="d-flex align-items-center">
+              
+              <span>5,9</span>
+
+              <span class="ms-3">7 seasons</span>
+              
+              <span class="ms-3">2014</span>
+
+              <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+              <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/15.svg" alt="Movie Rating"></div>
+
+            </div>
+
+            <table class="table mt-2 mb-2">
+              <tbody>
+                <tr>
+                  <td>Release date</td>
+                  <td>March 19, 2014 –; September 30, 2020</td>
+                </tr>
+                <tr>
+                  <td>Director</td>
+                  <td>Jason Rothenberg</td>
+                </tr>
+                <tr>
+                  <td>Theme music composer</td>
+                  <td>van Frankfort; Liz Phairs</td>
+                </tr>
+                <tr>
+                  <td>Story by</td>
+                  <td>Kass Morgan</td>
+                </tr>
+                <tr>
+                  <td>Production companies</td>
+                  <td>Alloy Entertainment; CBS Television Studios; Warner Bros. Television; Bonanza Productions;</td>
+                </tr>
+                <tr>
+                  <td>Genres</td>
+                  <td>Drama, Science fiction, Dystopia and Action</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>A nuclear conflict has decimated civilisation. A century later, a spaceship accommodating humanity's lone survivors dispatch 100 juvenile delinquents back to the Earth to determine its habitability.</p>
+
+            <div class="d-flex align-items-center preview-media mt-4">
+
+              <button data-mediaevent="play" class="preview-play rounded btn btn-success"><i class="cci-play-fill-01"></i><span class="ms-2">Play</span></button>
+
+              <div class="btn-group ms-3">
+                <button data-mediaevent="trailer" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Watch the trailer" aria-label="Watch the trailer"><i class="cci-play-01"></i></button>
+                <button class="ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Add to your list" aria-label="Add to your list"><i class="cci-add-01"></i></button>
+                <button class="ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Hide this movie" aria-label="Hide this movie"><i class="cci-block-04"></i></button>
+                <button class="ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Download this movie" aria-label="Download this movie"><i class="cci-download-09"></i></button>
+              </div>
+
+            </div>
+            
+            <div class="mt-4 d-flex">By clicking Play, you agree to our <a href="terms-of-service.html" class="hover-green ms-2 text-green">Terms of Service</a></div>
+
+          </div>
+
+          <div class="movie-banner">
+
+            <div class="row">
+
+              <div class="col-sm-5"></div>
+  
+              <div class="col-sm banner">
+  
+                <div class="content-img">
+                  
+                  <img src="assets/img/movies/the-100-banner-preview.jpg" alt="">
+  
+                  <div class="shadow-left"></div>
+                  <div class="shadow-bottom"></div>
+  
+                </div>
+  
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="movies-section mt-5 mb-5">
+
+        <div class="container">
+
+          <h1 class="h4">On high</h1>
+          
+          <div class="movies-preview owl-carousel owl-theme owl-loaded owl-drag mt-3">
+  
+            <div class="card poster">
+
+              <a href="movie-info.html" class="card-header">
+
+                <img src="assets/img/movies/avatar-2.jpg" class="card-img-top" alt="Avatar 2 Poster">
+
+                <span class="play-preview"><i class="cci-play-round-01"></i></span>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">Avatar 2</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this movie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">Jake Sully and Ney'tiri have formed a family and are doing everything to stay together. However, they must leave their home and explore the regions of Pandora. When an ancient threat resurfaces, Jake must fight a difficult war against the humans.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>1h 38min</span>
+                  
+                  <span class="ms-3">2022</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/15.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="movie-info.html" class="card-header">
+
+                <img src="assets/img/movies/wrath-of-man.jpg" class="card-img-top" alt="Wrath of Man Poster">
+
+                <span class="play-preview"><i class="cci-play-round-01"></i></span>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">Wrath of Man</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this movie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">H is a mysterious man who starts working for a cash moving truck company. He becomes known for using amazing precision and dexterity to neutralise robbers. However, H is actually out for revenge.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>1h 59min</span>
+                  
+                  <span class="ms-3">2021</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="movie-info.html" class="card-header">
+
+                <img src="assets/img/movies/interstellar.jpg" class="card-img-top" alt="Wrath of Man Poster">
+
+                <span class="play-preview"><i class="cci-play-round-01"></i></span>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">Interstellar</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this movie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>2h 49min</span>
+                  
+                  <span class="ms-3">2014</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/12.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="movie-info.html" class="card-header">
+
+                <img src="assets/img/movies/free-guy.jpg" class="card-img-top" alt="Free Guy Poster">
+
+                <span class="play-preview"><i class="cci-play-round-01"></i></span>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">Free Guy</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this movie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">When a bank teller discovers he's actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there's no limits, he's determined to save the day his way before it's too late, and maybe find a little romance with the coder who conceived him.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>1h 55min</span>
+                  
+                  <span class="ms-3">2021</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/general.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="movie-info.html" class="card-header">
+
+                <img src="assets/img/movies/passengers.jpg" class="card-img-top" alt="Passegers Poster">
+
+                <span class="play-preview"><i class="cci-play-round-01"></i></span>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">Passengers</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this movie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">During a voyage to a distant colony planet, Jim's hypersleep pod malfunctions, waking him up. He and fellow passenger Aurora must work together to prevent their spaceship from meeting with a disaster.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>1h 56min</span>
+                  
+                  <span class="ms-3">2017</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/15.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="movie-info.html" class="card-header">
+
+                <img src="assets/img/movies/i-am-legend.jpg" class="card-img-top" alt="I Am Legend Poster">
+
+                <span class="play-preview"><i class="cci-play-round-01"></i></span>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">I Am Legend</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this movie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">Robert Neville, a scientist, is the last human survivor of a plague in the whole of New York. He attempts to find a way to reverse the effects of the man-made virus by using his own immune blood.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>1h 41min</span>
+                  
+                  <span class="ms-3">2008</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/15.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="movie-info.html" class="card-header">
+
+                <img src="assets/img/movies/maze-runner.jpg" class="card-img-top" alt="Maze Runner Poster">
+
+                <span class="play-preview"><i class="cci-play-round-01"></i></span>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">I Am Legend</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this movie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">Thomas loses his memory and finds himself trapped in a massive maze called the Glade. He and his friends try to escape from the maze and eventually learn that they are subjects of an experiment.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>1h 53min</span>
+                  
+                  <span class="ms-3">2014</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/15.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="movie-info.html" class="card-header">
+
+                <img src="assets/img/movies/ready-player-one.jpg" class="card-img-top" alt="Ready Player One Poster">
+
+                <span class="play-preview"><i class="cci-play-round-01"></i></span>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">Ready Player One</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this movie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">James Halliday designs a virtual reality and hides the keys to his fortune in it for a worthy player to find after his death. Wade, a teenager, sets out on a quest to find the keys and the fortune.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>2h 20min</span>
+                  
+                  <span class="ms-3">2018</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/12.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="movie-info.html" class="card-header">
+
+                <img src="assets/img/movies/back-the-future.jpg" class="card-img-top" alt="Back The Future Poster">
+
+                <span class="play-preview"><i class="cci-play-round-01"></i></span>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">Back The Future</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this movie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">Marty travels back in span using an eccentric scientist's span machine. However, he must make his high-school-aged parents fall in love in order to return to the present.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>1h 56min</span>
+                  
+                  <span class="ms-3">1985</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/13.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div id="category" class="carousel slide category mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <a href="movie-info.html" class="carousel-item active">
+                <img src="assets/img/design/13530.jpg"  class="d-block w-100 img-fluid" alt="Wrath Of Man Banner">
+              </a>
+              <a href="movie-info.html" class="carousel-item">
+                <img src="assets/img/design/13408.jpg"  class="d-block w-100 img-fluid" alt="Rampage Banner">
+              </a>
+              <a href="movie-info.html" class="carousel-item">
+                <img src="assets/img/design/13602.jpg"  class="d-block w-100 img-fluid" alt="Tenet Banner">
+              </a>
+              <a href="movie-info.html" class="carousel-item">
+                <img src="assets/img/design/13503.jpg"  class="d-block w-100 img-fluid" alt="Bad Boys For Life Banner">
+              </a>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#category" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#category" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+
+      </section>
+      
+    </main>
+
+    <footer>
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md d-flex align-items-center justify-content-start">
+
+            <p class="text-white p-0">StarDust All rights reserved</p>
+
+          </div>
+
+          <div class="col-md d-flex align-items-center justify-content-end">
+
+            <nav class="nav">
+
+              <ul class="links-in-line p-0 m-0">
+
+                <li><a href="terms-of-service.html">Terms of Service</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+
+              </ul>
+
+            </nav>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+    
+    <script src="assets/js/jquery-3.6.0.slim.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/rangeslider/rangeslider.min.js"></script>
+    <script src="assets/js/player.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

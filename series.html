@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="crowbarcode">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="movies, series, watch movies online, movies online free, watch series online free, movies in 1080p, 720p, 1080p, crowbarcode, movies in high definition, movies in 720p, movies in hd, action, comedy, adventure, science fiction, shows tv show, survival shows, drama, free movies and series, free online movies and series, watch movies and series for free">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/icons/crowbarcode-icons.css">
+    <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owl-carousel/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-responsive.css">
+    <title>StarDust - Series</title>
+</head>
+<body>
+
+    <div id="loading-page" class="loading-page d-flex flex-column">
+
+      <div class="logo"><a href="index.html"><img src="assets/img/logos/logo-icon-column-white.svg" alt="crowbarcode logo"></a></div>      
+
+      <div class="spinner-border mt-4" role="status"></div> 
+    
+    </div>
+
+    <header>
+
+      <div class="container">
+
+          <div class="row w-100">
+
+              <button data-eventmenumobile="one" aria-label="Open menu mobile" class="me-auto col-md-9 d-flex align-items-center justify-content-start p-0 m-0"><i class="cci-menu-09"></i></button>
+
+              <div data-menumobile="one" class="col-md-9 d-flex align-items-center p-0 m-0">
+
+                  <div class="d-flex align-items-center">
+
+                    <div class="logo"><a href="index.html"><img src="assets/img/logos/logo-icon-column-white.svg" alt="crowbarcode logo"></a></div>
+
+                    <button data-eventmenumobile="one" aria-label="Close menu mobile" class="ms-auto"><i class="cci-close-menu-02"></i></button>
+
+                  </div>
+
+                  <nav class="navbar navbar-expand-lg navbar-light p-0">
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="navbar-nav">
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="movies.html">Movies</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="series.html">Series</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="stardust.html">Stardust Original</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="kids.html">Kids</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="genres.html">Movies Genres</a>
+                            </li>
+                          </ul>
+                        </div>
+                  </nav>
+
+              </div>
+
+              <div class="col-md d-flex align-items-center justify-content-end width-max">
+
+                  <div class="profile">
+
+                    <div class="content-img"><img src="assets/img/user/user-01.svg" alt="Profile Photo"></div>
+
+                    <div class="dropdown">
+                      <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Gordon</a>
+                    
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="my-account.html">My Account</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#changeProfile">Change Profile</a></li>
+                        <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                        <li><a class="dropdown-item" href="payments.html">Payments</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Log Out</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+
+      <div class="modal fade change-profile" id="changeProfile" aria-hidden="true" aria-labelledby="changeProfileLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="changeProfileLabel">Change Profile</h5>
+              <button type="button" class="btn hover-green p-0 m-0" data-bs-dismiss="modal" aria-label="Close"><i class="cci-uncheck-01"></i></button>
+            </div>
+            <div class="modal-body">
+
+              <div class="row profiles">
+
+                <div class="col-md">
+
+                  <div class="content-img"><img src="assets/img/user/user-01.svg" alt="Profile"></div>
+
+                  <span>Gordon Freeman</span>
+
+                </div>
+
+                <div class="col-md">
+
+                  <div class="content-img"><img src="assets/img/user/user-03.svg" alt="Profile"></div>
+
+                  <span>Morgan Yu</span>
+
+                </div>
+
+                <div class="col-md">
+
+                  <div class="content-img"><img src="assets/img/user/user-07.svg" alt="Profile"></div>
+
+                  <span>Kids</span>
+
+                </div>
+
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-success" data-bs-target="#changeProfile2" data-bs-toggle="modal">Create new profile</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade change-profile" id="changeProfile2" aria-hidden="true" aria-labelledby="changeProfile2Label" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="changeProfile2Label">Create a new profile</h5>
+              <button type="button" class="btn p-0 m-0 hover-green" data-bs-dismiss="modal" aria-label="Close"><i class="cci-uncheck-01"></i></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Profile Name:</label>
+                  <input type="text" class="form-control" id="recipient-name" placeholder="Profile Name">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Kids</label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-success" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Create Profile</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <main>
+
+      <section class="movies-section mt-4 mb-4">
+
+        <div class="container">
+
+          <h1 class="h4 mt-1">Series On High</h1>
+          
+          <div class="movies owl-carousel owl-theme owl-loaded owl-drag mt-3">
+
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/the-flash.jpg" class="card-img-top" alt="The Flash Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">The Flash</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">Barry Allen, a forensic investigator in Central City, gains the power of superhuman speed from a freak accident. He decides to use it to fight crime as the Flash, a costumed superhero.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>8 seasons</span>
+                  
+                  <span class="ms-3">2014</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/watchmen.jpg" class="card-img-top" alt="Watchmen Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">Watchmen</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">Rorschach, a vigilante, sets out to investigate the mysterious circumstances under which one of his colleagues died. In the process of doing so, he discovers some disturbing secrets.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>1 seasons</span>
+                  
+                  <span class="ms-3">2009</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/csi.jpg" class="card-img-top" alt="CSI: Crime Scene Investigation Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">CSI: Crime Scene Investigation</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">Gil Grissom and his team of Las Vegas criminologists use scientific methods of investigation to solve grisly murders committed by different criminal masterminds.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>16 seasons</span>
+                  
+                  <span class="ms-3">2000</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/the-100.jpg" class="card-img-top" alt="The 100 Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">The 100</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">A nuclear conflict has decimated civilisation. A century later, a spaceship accommodating humanity's lone survivors dispatch 100 juvenile delinquents back to the Earth to determine its habitability.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>7 seasons</span>
+                  
+                  <span class="ms-3">2014</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/the-big-bang-theory.jpg" class="card-img-top" alt="The Big Bang Theory Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">The Big Bang Theory</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">The lives of four socially awkward friends, Leonard, Sheldon, Howard and Raj, take a wild turn when they meet the beautiful and free-spirited Penny.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>12 seasons</span>
+                  
+                  <span class="ms-3">2007</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/9-1-1.jpg" class="card-img-top" alt="9-1-1 Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">9-1-1</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">Policemen, paramedics and firefighters put themselves in dangerous situations to save people's lives. Meanwhile, they also have to deal with their personal problems.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>5 seasons</span>
+                  
+                  <span class="ms-3">2018</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/grey-s-anatomy.jpg" class="card-img-top" alt="Grey's Anatomy Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">Grey's Anatomy</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">Surgical interns and their supervisors embark on a medical journey where they become part of heart-wrenching stories and make life-changing decisions in order to become the finest doctors.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>18 seasons</span>
+                  
+                  <span class="ms-3">2005</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/the-office.jpg" class="card-img-top" alt="The Office Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">The Office</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">A motley group of office workers go through hilarious misadventures at the Scranton, Pennsylvania, branch of the Dunder Mifflin Paper Company.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>9 seasons</span>
+                  
+                  <span class="ms-3">2005</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/arrow.jpg" class="card-img-top" alt="Arrow Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">Arrow</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">After mastering the skill of archery on a deserted island, multi-millionaire playboy Oliver Queen returns to his city to take on the vigilante persona of Arrow to fight crime and corruption.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>8 seasons</span>
+                  
+                  <span class="ms-3">2012</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <h2 class="h4 mt-1">Series</h2>
+          
+          <div class="movies owl-carousel owl-theme owl-loaded owl-drag mt-3">
+  
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/the-100.jpg" class="card-img-top" alt="The 100 Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">The 100</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">A nuclear conflict has decimated civilisation. A century later, a spaceship accommodating humanity's lone survivors dispatch 100 juvenile delinquents back to the Earth to determine its habitability.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>7 seasons</span>
+                  
+                  <span class="ms-3">2014</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/the-big-bang-theory.jpg" class="card-img-top" alt="The Big Bang Theory Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">The Big Bang Theory</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">The lives of four socially awkward friends, Leonard, Sheldon, Howard and Raj, take a wild turn when they meet the beautiful and free-spirited Penny.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>12 seasons</span>
+                  
+                  <span class="ms-3">2007</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/the-flash.jpg" class="card-img-top" alt="The Flash Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">The Flash</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">Barry Allen, a forensic investigator in Central City, gains the power of superhuman speed from a freak accident. He decides to use it to fight crime as the Flash, a costumed superhero.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>8 seasons</span>
+                  
+                  <span class="ms-3">2014</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/watchmen.jpg" class="card-img-top" alt="Watchmen Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">Watchmen</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">Rorschach, a vigilante, sets out to investigate the mysterious circumstances under which one of his colleagues died. In the process of doing so, he discovers some disturbing secrets.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>1 seasons</span>
+                  
+                  <span class="ms-3">2009</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/csi.jpg" class="card-img-top" alt="CSI: Crime Scene Investigation Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">CSI: Crime Scene Investigation</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">Gil Grissom and his team of Las Vegas criminologists use scientific methods of investigation to solve grisly murders committed by different criminal masterminds.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>16 seasons</span>
+                  
+                  <span class="ms-3">2000</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/9-1-1.jpg" class="card-img-top" alt="9-1-1 Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">9-1-1</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">Policemen, paramedics and firefighters put themselves in dangerous situations to save people's lives. Meanwhile, they also have to deal with their personal problems.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>5 seasons</span>
+                  
+                  <span class="ms-3">2018</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/grey-s-anatomy.jpg" class="card-img-top" alt="Grey's Anatomy Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">Grey's Anatomy</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">Surgical interns and their supervisors embark on a medical journey where they become part of heart-wrenching stories and make life-changing decisions in order to become the finest doctors.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>18 seasons</span>
+                  
+                  <span class="ms-3">2005</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/the-office.jpg" class="card-img-top" alt="The Office Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">The Office</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">A motley group of office workers go through hilarious misadventures at the Scranton, Pennsylvania, branch of the Dunder Mifflin Paper Company.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>9 seasons</span>
+                  
+                  <span class="ms-3">2005</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="card poster">
+
+              <a href="serie-info.html" class="card-header">
+
+                <img src="assets/img/movies/arrow.jpg" class="card-img-top" alt="Arrow Poster">
+
+                <div class="play-preview"><i class="cci-play-round-01"></i></div>
+
+              </a>
+
+              <div class="card-body">
+
+                <div class="w-100 d-flex align-items-center pt-1 pb-1">
+
+                  <span class="h5 card-title m-0">Arrow</span>
+
+                  <div class="btn-group ms-auto">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Add to your list"><i class="cci-add-01"></i></button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Hide this serie"><i class="cci-block-04"></i></button>
+                  </div>
+
+                </div>
+                <p class="card-text mt-2">After mastering the skill of archery on a deserted island, multi-millionaire playboy Oliver Queen returns to his city to take on the vigilante persona of Arrow to fight crime and corruption.</p>
+              
+                <div class="d-flex align-items-center mt-3">
+                  
+                  <span>8 seasons</span>
+                  
+                  <span class="ms-3">2012</span>
+
+                  <i class="cci-message-03 d-flex align-items-center ms-3"></i>
+
+                  <div class="content-img movie-rating ms-3 mb-2"><img src="assets/img/rating/18.svg" alt="Movie Rating"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="container">
+
+            <div id="category" class="carousel slide category" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <a href="movie-info.html" class="carousel-item active">
+                  <img src="assets/img/design/13530.jpg"  class="d-block w-100 img-fluid" alt="Wrath Of Man Banner">
+                </a>
+                <a href="movie-info.html" class="carousel-item">
+                  <img src="assets/img/design/13408.jpg"  class="d-block w-100 img-fluid" alt="Rampage Banner">
+                </a>
+                <a href="movie-info.html" class="carousel-item">
+                  <img src="assets/img/design/13602.jpg"  class="d-block w-100 img-fluid" alt="Tenet Banner">
+                </a>
+                <a href="movie-info.html" class="carousel-item">
+                  <img src="assets/img/design/13503.jpg"  class="d-block w-100 img-fluid" alt="Bad Boys For Life Banner">
+                </a>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#category" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#category" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+  
+          </div>
+
+        </div>
+
+      </section>
+      
+    </main>
+
+    <footer>
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md d-flex align-items-center justify-content-start">
+
+            <p class="text-white p-0">StarDust All rights reserved</p>
+
+          </div>
+
+          <div class="col-md d-flex align-items-center justify-content-end">
+
+            <nav class="nav">
+
+              <ul class="links-in-line p-0 m-0">
+
+                <li><a href="terms-of-service.html">Terms of Service</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+
+              </ul>
+
+            </nav>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+    
+    <script src="assets/js/jquery-3.6.0.slim.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
